@@ -1,11 +1,5 @@
 package dev.j3fftw.luckypanda;
 
-import dev.j3fftw.luckypanda.surprise.ExplosionSurprise;
-import dev.j3fftw.luckypanda.surprise.HoleSurprise;
-import dev.j3fftw.luckypanda.surprise.JailAnvilSurprise;
-import dev.j3fftw.luckypanda.surprise.JailLavaSurprise;
-import dev.j3fftw.luckypanda.surprise.ObsidianTrapSurprise;
-import dev.j3fftw.luckypanda.surprise.RollingPandaSurprise;
 import dev.j3fftw.luckypanda.surprise.Surprise;
 import dev.j3fftw.luckypanda.surprise.lucky.LuckyPotion;
 import dev.j3fftw.luckypanda.surprise.lucky.PandaBootsSurprise;
@@ -92,9 +86,26 @@ public final class LuckyPanda extends JavaPlugin {
         this.addSurprise(new HoleSurprise());
         this.addSurprise(new JailAnvilSurprise());
         this.addSurprise(new JailLavaSurprise());
-        this.addSurprise(new ObsidianTrapSurprise());
-        this.addSurprise(new ExplosionSurprise());
-        this.addSurprise(new RollingPandaSurprise());
+        this.addSurprise(new BabyPandaSurprise());
+        this.addSurprise(new StackedPandasSurprise());
+        this.addSurprise(new FlyingPandaSurprise());
+        this.addSurprise(new TryAgainPandaSurprise());
+        this.addSurprise(new PandaSkullSurprise());
+        this.addSurprise(new PandaChestplateSurprise());
+        this.addSurprise(new PandaLeggingSurprise());
+        this.addSurprise(new PandaBootsSurprise());
+        this.addSurprise(new ExplodingPanda());
+        this.addSurprise(new PandaCannonSurprise());
+        this.addSurprise(new LuckyPotion());
+        this.addSurprise(new PandaFirework());
+    }
+
+    public ProtectionManager getProtectionManager() {
+        return protectionManager;
+    }
+
+    public static LuckyPanda getInstance() {
+        return instance;
     }
 
 }
