@@ -29,12 +29,12 @@ public class LuckyCommand implements CommandExecutor {
                         return true;
                     }
                 }
-                player.sendMessage(ChatColor.RED + "There isn't a surprise with this ID, please try again.");
+                player.sendMessage(ChatColor.RED + "这个ID没有惊喜，请重试。");
             } else {
                 chooseSurprise().process(player, player);
             }
         } else {
-            player.sendMessage(ChatColor.RED + "You don't have the permissions to run this command.");
+            player.sendMessage(ChatColor.RED + "您没有运行此命令的权限。");
         }
         return true;
     }
